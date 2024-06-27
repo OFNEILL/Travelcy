@@ -43,23 +43,23 @@ export default function Currency(props: CurrencyProps) {
       <SteppedLineTo
         borderColor={`${!amountSupplied && props.currency === props.chosen ? "white" : "#818181"} `}
         from="fromValue"
-        fromAnchor={`${props.screenSize < 640 ? "bottom" : "right"}`}
+        fromAnchor={`${props.screenSize < 1024 ? "bottom" : "right"}`}
         to={props.currency}
-        toAnchor={`${props.screenSize < 640 ? "top" : "left"}`}
+        toAnchor={`${props.screenSize < 1024 ? "top" : "left"}`}
         delay={100}
         zIndex={amountSupplied && props.chosen === props.currency ? 100 : 1}
-        orientation={`${props.screenSize < 640 ? "v" : "h"}`}
+        orientation={`${props.screenSize < 1024 ? "v" : "h"}`}
         borderWidth={amountSupplied && props.chosen === props.currency ? 2 : 1}
       />
       <SteppedLineTo
         borderColor={`${!amountSupplied && props.currency === props.chosen ? "white" : "#818181"} `}
         from={props.currency}
-        fromAnchor={`${props.screenSize < 640 ? "bottom" : "right"}`}
+        fromAnchor={`${props.screenSize < 1024 ? "bottom" : "right"}`}
         to="toValue"
-        toAnchor={`${props.screenSize < 640 ? "top" : "left"}`}
+        toAnchor={`${props.screenSize < 1024 ? "top" : "left"}`}
         delay={100}
         zIndex={amountSupplied && props.chosen === props.currency ? 100 : 1}
-        orientation={`${props.screenSize < 640 ? "v" : "h"}`}
+        orientation={`${props.screenSize < 1024 ? "v" : "h"}`}
         borderWidth={amountSupplied && props.chosen === props.currency ? 2 : 1}
       />
     </div>

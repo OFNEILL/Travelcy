@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex items-start align-start">
-        <form className="gap-40 flex items-center sm:flex-row flex-col">
+        <form className="gap-40 flex items-center lg:flex-row flex-col">
           <input
             className="fromValue text-white bg-[#38393c] border-2 border-[#38393c] rounded-lg text-center p-2 focus:appearance-none focus:m-0 outline-none focus:border-[#818181]"
             type="number"
@@ -65,7 +65,7 @@ export default function Home() {
             id="fromValue"
             ref={startRef}
           />
-          <div className="flex flex-row sm:flex-col gap-4">
+          <div className="flex flex-row lg:flex-col gap-4">
             <Currency
               currency={"USD"}
               amount={fromValue}
